@@ -6,7 +6,8 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes, Com
 from datetime import datetime
 
 BOT_TOKEN      = "8648262134:AAHN7ijGUaPTWpIclq3FeN01x-Z0eHCsE34"
-OPENROUTER_KEY = "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"
+import os
+api_key = os.getenv("OPENROUTER_API_KEY")
 MANAGER_ID     = 963733849
 
 history = {}
